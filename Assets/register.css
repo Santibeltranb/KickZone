@@ -1,0 +1,98 @@
+body{
+    background: url(../Assets/Imagenes_Kickzone/AdiPuNi.jpg) no-repeat top center;
+    background-size: cover;
+    font-family: 'Montserrat Light Alt1', sans-serif;;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Registro{
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    height: 630px;
+    left: 50%;
+    padding: 70px 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.Registro a{
+    color: rgb(196, 193, 193);
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.Registro a:hover{
+    color: ghostwhite;
+}
+
+
+.Registro .logo{
+    border-radius: 50%;
+    height: 115px;
+    left: calc(50% - 50px);
+    position: absolute;
+    top: -50px;
+    width: 115px;
+}
+
+.Registro h2{
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.Registro input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.Registro input[type="text"], .Registro input[type="password"]{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    outline: none;
+}
+
+.Registro label{
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+}
+
+.Registro input[type="submit"]{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(196, 193, 193);
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    outline: none;
+}
+
+.Registro input[type="submit"]:hover{
+    color: ghostwhite;
+}
+
+#show{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: rgb(196, 193, 193);
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#show:hover{
+    color: ghostwhite;
+}

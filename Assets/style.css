@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Montserrat Light Alt1', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    border: 2px solid rgb(grey, grey, grey);
+    color: rgb(196, 193, 193);
+    font-size: 3.5em;
+}
+h2{font-size: 1.6em;}
+h3{font-size: 1.6em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1em;}
+
+button{
+    background-color: black;
+    border: 2px solid rgb(grey, grey, grey);
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px;
+    color: rgb(196, 193, 193);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+button:hover{
+    color: ghostwhite;
+}
+
+.container{
+    margin: auto;
+    max-width: 1400px;
+}
+
+
+#calzado{
+    background-color: rgb(0, 0, 0);
+    color: rgb(196, 193, 193);
+    text-align: center;
+}
+
+#calzado .container{
+    padding: 50px 20px;
+}
+
+#calzado p{
+    display: none;
+}
+
+#calzado .carta{
+    background-position: center center;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 80px;
+    margin: 12px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/LogoAdidas.jpg);
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/LogoNike.jpg);
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/LogoPuma.png);
+}
+
+#equipos{
+    background-color: black;
+    color: rgb(196, 193, 193);
+    text-align: center;
+}
+
+
+#equipos p{
+    display: none;
+}
+
+#equipos .options{
+    background-size: cover;
+    border-radius: 40px;
+    padding: 80px;
+    margin: 12px;
+}
+
+.options:first-child{
+    background-position: center center;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/Europa.jpg);
+}
+
+.options:nth-child(2){
+    background-position: top center;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/Selecciones.jpg);
+}
+
+
+#equipos .container{
+    padding: 50px 20px;
+}
+
+
+footer .container{
+    color: rgb(196, 193, 193);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+}
+
+footer .p{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+header .container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+header a{
+    color: rgb(196, 193, 193);
+    font-weight: bold;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: ghostwhite;
+}
+
+#hero{
+    align-items: center;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(Imagenes_Kickzone/AdiPuNi.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+
+
+img{
+    width: 90px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+@media(min-width: 720px){
+
+    #calzado .marcas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #calzado p{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #calzado .carta{
+        padding: 50px;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #equipos .uniforms{
+        display: flex;
+        justify-content: center;
+    }
+
+    #equipos p{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .container{
+        color: rgb(196, 193, 193);
+        display: flex;
+        height: 150px;
+        justify-content: flex-end;
+    }
+}
